@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 일반권한 - 매니페스트에 명세해주는 것만으로 사용할 수 있다 -->
+    <!-- 위험권한 - 매니페스트에도 명세하고 코드에서도 한번더 확인(개인정보와 관련된 권한은 모두 위험권한) -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -8,6 +16,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KkangSsam">
+        <activity
+            android:name=".gtest1.Gtest1Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".test1.Test1Activity"
             android:exported="false" />
