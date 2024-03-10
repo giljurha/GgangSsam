@@ -15,7 +15,7 @@ class Test1Activity : AppCompatActivity() {
 
         binding.button.setOnClickListener {
             val cursor = contentResolver.query(
-                Uri.parse("contet://com.my.provider"),
+                Uri.parse("content://com.my.provider"),
             null,null,null,null,null)
             while(cursor?.moveToNext() ?: false){
                 Log.d("kkang",cursor?.getString(0) ?: "")
