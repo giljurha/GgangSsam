@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/broadcastreceiver" />
             <option value="$PROJECT_DIR$/contentprovider" />
+            <option value="$PROJECT_DIR$/dialog" />
             <option value="$PROJECT_DIR$/intent" />
             <option value="$PROJECT_DIR$/jetpack" />
             <option value="$PROJECT_DIR$/permission" />
