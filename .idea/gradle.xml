@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/intent" />
             <option value="$PROJECT_DIR$/jetpack" />
             <option value="$PROJECT_DIR$/permission" />
+            <option value="$PROJECT_DIR$/recyclerview" />
             <option value="$PROJECT_DIR$/service" />
           </set>
         </option>

@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
             Profiles(R.drawable.woman, "홍드로이드", 27, "안드로이드 앱 개발자"),
             Profiles(R.drawable.woman, "홍드로이드", 27, "안드로이드 앱 개발자")
         )
-//        activityMainBinding.recyclerView
-//        activityMainBinding..layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-//        rv_profile.setHasFixedSize(true)
-//
-//        rv_profile.adapter = ProfileAdapter(profileList)
+
+        activityMainBinding.recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        activityMainBinding.recyclerView.setHasFixedSize(true)
+
+        activityMainBinding.recyclerView.adapter = ProfileAdapter(profileList)
     }
 }
